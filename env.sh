@@ -21,7 +21,8 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 
 # recompile it with OpenCV
 ## x -> this will not work, this only install the python version for python to call open cv sudo apt install python3-opencv
-
+# https://docs.opencv.org/4.5.0/d7/d9f/tutorial_linux_install.html
+# https://linuxize.com/post/how-to-install-opencv-on-ubuntu-18-04/
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev \
     libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
     libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev \
@@ -41,6 +42,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_EXAMPLES=ON ..
 make -j8 # Modify the -j flag according to your processor. If you do not know the number of cores your processor, you can find it by typing nproc.
 sudo make install
+#######################or with official site#######
+
 
 
 ## Change the make file and 1 the OPENCV constant
