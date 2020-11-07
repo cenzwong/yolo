@@ -23,6 +23,7 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 
 ####################INSTALL Yolov4#############################
 # https://github.com/AlexeyAB/darknet YOLOv4
+git clone https://github.com/AlexeyAB/darknet
 ./build.sh
 # change Makefile
 sudo make
