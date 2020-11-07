@@ -24,7 +24,9 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 ####################INSTALL Yolov4#############################
 # https://github.com/AlexeyAB/darknet YOLOv4
 git clone https://github.com/AlexeyAB/darknet
-./build.sh
+sudo apt install git
+sudo apt install make gcc g++
+# ./build.sh Seems like only for CMake
 # change Makefile
 sudo make
 
@@ -36,7 +38,7 @@ sudo make
 
 ####################INSTALL OPENCV#############################
 # https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
-# install both of the quick start
+# install both of the quick start -- Seems like no need
 ########
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
 sudo apt update && sudo apt install -y cmake g++ wget unzip
